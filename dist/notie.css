@@ -2,9 +2,12 @@
   font-size: 1.6rem;
   height: auto;
   left: 0;
+  right: 0;
   position: fixed;
   text-align: center;
-  width: 100%;
+  max-width: 90%;
+  width: 900px;
+  margin: 0 auto;
   z-index: 2147483647;
   box-sizing: border-box;
   -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
@@ -16,16 +19,22 @@
 @media screen and (max-width: 900px) {
   .notie-container {
     font-size: 1.4rem;
+    max-width: unset;
+    width: 100%;
   }
 }
 @media screen and (max-width: 750px) {
   .notie-container {
     font-size: 1.2rem;
+    max-width: unset;
+    width: 100%;
   }
 }
 @media screen and (max-width: 400px) {
   .notie-container {
     font-size: 1rem;
+    max-width: unset;
+    width: 100%;
   }
 }
 
@@ -50,7 +59,7 @@
 }
 
 .notie-background-overlay {
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 
 .notie-textbox {

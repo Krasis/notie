@@ -14,7 +14,7 @@ $notie-color-error: #CC0000 !default;
 $notie-color-info: #0066FF !default;
 $notie-color-neutral: #757575 !default;
 $notie-color-white: #FFFFFF !default;
-$notie-color-overlay: #FFFFFF !default;
+$notie-color-overlay: #000000 !default;
 $notie-content-width: 900px !default;
 $notie-z-index: 2147483647 !default;
 
@@ -51,9 +51,12 @@ $notie-z-index: 2147483647 !default;
   font-size: $notie-font-size-widescreen;
   height: auto;
   left: 0;
+  right: 0;
   position: fixed;
   text-align: center;
-  width: 100%;
+  max-width: 90%;
+  width: 900px;
+  margin: 0 auto;
   z-index: $notie-z-index;
 
   @include border-box-box-sizing();
@@ -61,12 +64,18 @@ $notie-z-index: 2147483647 !default;
 
   @media screen and (max-width: $notie-breakpoint-desktop) {
     font-size: $notie-font-size-desktop;
+    max-width: unset;
+    width: 100%;
   }
   @media screen and (max-width: $notie-breakpoint-tablet) {
     font-size: $notie-font-size-tablet;
+    max-width: unset;
+    width: 100%;
   }
   @media screen and (max-width: $notie-breakpoint-mobile) {
     font-size: $notie-font-size-mobile;
+    max-width: unset;
+    width: 100%;
   }
 }
 
